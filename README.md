@@ -1,5 +1,9 @@
 # A Windah Basudara GTA VI clip, entered for the make.fun views bounty
 
+[![make.fun · gta6-clipper-01](https://make.fun/badge/gta6-clipper-01.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![rank](https://make.fun/badge/gta6-clipper-01/baguspriyoariwibowo07-sketch/gta6-clipper/rank.svg)](https://make.fun/bounty/gta6-clipper-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![reward](https://make.fun/badge/gta6-clipper-01/baguspriyoariwibowo07-sketch/gta6-clipper/reward.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+
 This repository is an entry for make.fun's **Clip GTA 6 for the most
 YouTube views** bounty
 ([gta6-clipper-01](https://make.fun/bounty/gta6-clipper-01)). The bounty
