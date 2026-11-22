@@ -11,7 +11,7 @@
 //   MAKEFUN_BOT_DIR     where VIDEO.json lives   (default: /bot)
 //   MAKEFUN_OUTPUT_DIR  where the copy must land (default: /output)
 
-import { copyFileSync, existsSync, mkdirSync, readFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 
 function fail(message) {
@@ -25,6 +25,13 @@ const outputDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 const sourcePath = join(botDir, "VIDEO.json");
 if (!existsSync(sourcePath)) {
   fail(`no VIDEO.json found in the bot directory (${botDir})`);
+}
+
+// The house's gate caps VIDEO.json at 16,384 bytes; refuse an oversized
+// pointer here with a clear message instead of letting the entry be
+// rejected downstream.
+if (statSync(sourcePath).size > 16384) {
+  fail("VIDEO.json is over the gate's 16,384-byte cap");
 }
 
 // Parse before copying so a malformed pointer fails loudly here instead of
